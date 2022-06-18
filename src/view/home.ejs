@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NameAGE</title>
+</head>
+
+<body>
+
+    <div class="containertitulo">
+        <span>Name Age</span>
+
+    </div>
+
+
+    <div class="containerpesquisa">
+
+        <form method="post" action="/">
+
+            <input type="text" name="nome" />
+
+            <button type="submit">
+
+                <span> Pesquisar </span>
+
+            </button>
+
+        </form>
+
+
+    </div>
+
+
+
+    <div class="containernome">
+
+        <% if(dados.length> 0) { %>
+
+
+            <div>
+                <span> Nome Pesquisado:</span>
+
+                <span>
+                    <%= dados[0].name %>
+                </span>
+
+            </div>
+
+
+            <div>
+                <span> Idade Encontrada: </span>
+                <span>
+                    <%= dados[0].age==null ? "Idade aproximada nao encontrada" : dados[0].age %>
+                </span>
+            </div>
+
+
+
+            <% } %>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

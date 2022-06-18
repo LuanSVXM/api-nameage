@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.containertitulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+
+.containertitulo > span {
+    font-size: 24px;
+    font-family: Verdana;
+    letter-spacing: 1px;
+}
+
+
+
+.containerpesquisa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  40px;
+}
